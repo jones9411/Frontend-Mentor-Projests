@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display";
+}
+
+body {
+  background-color: #e0e8ff;
+  z-index: 0;
+}
+
+.bold-700 {
+  font-weight: 700;
+}
+
+.container {
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 55%;
+  height: 95vh;
+  width: 100%;
+  display: flex;
+}
+
+.order-card {
+  width: 451px;
+  height: 697px;
+  background-color: #ffffff;
+  margin: auto;
+  border-radius: 25px;
+}
+
+.card-hero {
+  width: 100%;
+  height: 218px;
+  background-image: url("./images/illustration-hero.svg");
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.card-content {
+  height: 479px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.order {
+  width: 354px;
+  height: 37px;
+  font-size: 28px;
+  text-align: center;
+  margin: auto;
+}
+
+.order-summary {
+  width: 354px;
+  height: 78px;
+  font-size: 16px;
+  text-align: center;
+  margin: auto;
+}
+
+.purchase-card {
+  width: 354px;
+  height: 98px;
+  border-radius: 11px;
+  margin: auto;
+  background-color: #f7f9ff;
+  display: flex;
+  flex-direction: row;
+}
+
+.music-img {
+  height: 48px;
+  width: 48px;
+  align-self: center;
+  margin: 15px;
+}
+
+.purchase {
+  display: flex;
+  justify-content: space-between;
+  height: 98px;
+  padding: 15px;
+  line-height: 2rem;
+}
+
+.change {
+  width: 145px;
+  padding-bottom: 25px;
+  text-align: right;
+  align-self: center;
+  text-decoration: underline;
+  color: #382ae1;
+  font-weight: 700;
+}
+
+.span-1 {
+  cursor: pointer;
+}
+.span-1:hover {
+  color: #766cf1;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 354px;
+  margin: auto;
+}
+
+.proceed-order {
+  background-color: #382ae1;
+  color: #ffffff;
+  border: 0;
+  height: 50px;
+  width: 100%;
+  border-radius: 11px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.proceed-order:hover {
+  background-color: #766cf1;
+}
+
+.cancel-order {
+  font-size: 15px;
+  border: none;
+  background-color: #ffffff;
+  color: #717171;
+  cursor: pointer;
+  padding: 25px;
+}
+.cancel-order:hover {
+  color: #1f2e55;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 380px) {
+  .order-card {
+    width: 327px;
+    height: 567px;
+  }
+  .card-hero {
+    height: 160px;
+    width: 327px;
+    background-size: contain;
+  }
+  .order,
+  .order-summary,
+  .purchase-card,
+  .buttons {
+    width: 279px;
+  }
+  .change {
+    width: 75px;
+  }
+  .card-content {
+    height: 407px;
+  }
+}
